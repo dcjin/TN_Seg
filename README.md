@@ -12,30 +12,25 @@ Automated segmentation of trigeminal nerve and vessels using ONNX deep learning 
 
 ## Installation
 
-### Method 1: Install from ZIP (Recommended for Sharing)
+### Download
 
-1. **For the extension developer:**
-   - In 3D Slicer, go to `File` → `Add Extension`
-   - Select the `TNSeg-v1.0.zip` file
-   - Restart Slicer
+1. **Source code:** Clone this repository or download the ZIP from GitHub.
+2. **ONNX model:** Download `trigeminal_3d_fullres.onnx` (~116 MB) from the [GitHub Releases page](https://github.com/dcjin/TN_Seg/releases).
 
-2. **For end users:**
-   - Extract the `TN_auto_seg` folder to any location
-   - In 3D Slicer, go to `File` → `Add Extension` → `Browse`
-   - Select the extracted `TN_auto_seg` folder
-   - Restart Slicer
+### Installation
 
-### Method 2: Manual Installation
+1. Clone or download the `TN_auto_seg` folder to your local machine.
+2. Place the `trigeminal_3d_fullres.onnx` file in the **same directory** as `TN_Seg.py` (`TN_auto_seg/TN_Seg/`).
+3. In 3D Slicer, go to `File` → `Add Extension` → select the `TN_auto_seg` folder.
+4. Restart Slicer.
 
-1. Copy the entire `TN_auto_seg` folder to:
-   ```
-   C:\Users\<YourUsername>\AppData\Local\NA-MIC\Slicer 5.8\Extensions\
-   ```
-   (Create the folder if it doesn't exist)
+### Alternative: Copy to Extensions Folder
 
-2. Copy the ONNX model file (`trigeminal_3d_fullres.onnx`) to the same directory as `TN_Seg.py`
-
-3. Restart 3D Slicer
+Copy the entire `TN_auto_seg` folder to:
+```
+C:\Users\<YourUsername>\AppData\Local\NA-MIC\Slicer 5.8\Extensions\
+```
+(Create the folder if it doesn't exist)
 
 ## Usage
 
@@ -99,7 +94,7 @@ TN_auto_seg/
 ## Citation
 
 If you use this extension in your research, please cite:
-> [Your citation here]
+> Jin X, et al. TN_Seg: Automatic Trigeminal Nerve Segmentation via nnU-Net with Test-Time Adaptation. [Under review/journal TBD]
 
 ## License
 
@@ -107,4 +102,4 @@ MIT License
 
 ## Contact
 
-For issues or questions, please contact: [Your email]
+For issues or questions, please contact: xingxingjin@seu.edu.cn
